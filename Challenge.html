@@ -1,0 +1,44 @@
+<iDOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="/main.css">
+    </head>
+
+    <body>
+        
+        <div id="flash"></div>
+        <header>
+            
+                <button id="theme-toggle">Modo Oscuro</button>
+            </div>           
+        </header>
+
+        <main>
+            <section>
+                <textarea class="text-area" cols="92" rows="10" placeholder="Ingrese su texto aqui"></textarea required>
+                <div>  
+                    <h5 class="informacion">Solo letras minusculas y sin acentos</h5>   
+                </div>
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+
+                    <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section>
+                <textarea class="mensaje" cols="20" rows="10" placeholder="Su mensaje se mostrara aquí"></textarea>                
+                <div>
+                    <button class="copiador" onclick="copiar()">Copiar</button>
+                </div>
+            </section>      
+        </main>
+        <script src="/script.js"></script>
+
+    </body>
+</html>
